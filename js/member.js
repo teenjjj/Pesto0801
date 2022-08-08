@@ -1,32 +1,21 @@
-$(document).on('ready',function(){
+document.addEventListener("DOMContentLoaded",function(){
 
-    $(".center").slick({
+    var windowWidth = window.innerWidth;
 
-        dots: false,
-        infinite: false,
-        centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
+    var horLength = document.querySelector(".element-wrapper").scrollWidth;
 
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                infinite: true
-            }
+    var distFromTop = document.querySelector(".horizontal-section").offsetTop;
 
-        },{
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
+    var scrollDistance = distFromTop + horLength - windowWidth;
 
-            }
-        },{
-            breakpoint: 300,
-            settings: "unslick"
-        
-        }]
+    document.querySelector(".horizontal-section").style.height = horLength + "px";
 
-    });
+    window.onscroll = function(){
+    var scrollTop = window.pageYOffset;
+    
+        if (scrollTop >= distFromTop && scrollTop <= scrollDistance) {
+            document.querySelector(".element-wrapper").style.transform = "translateX(-"+(scrollTop - distFromTop)+"px)";
+        }
+    }
+     
 });
