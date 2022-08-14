@@ -249,7 +249,9 @@ header{
 }
   
 .element {
-    margin: 0 50px 0 0;
+    height: 360px;
+    width: 230px;
+    margin: 0 30px 0 10px;
     flex-shrink: 0;
 }
 
@@ -266,7 +268,7 @@ header{
         margin-top: 4px;
         font-family: 'Open Sans', sans-serif;
         color: gray;
-        text-transform: uppercase;
+        // text-transform: uppercase;
     }
 }
 
@@ -274,7 +276,61 @@ header{
     font-size: 3em;
     letter-spacing: 3px;
     margin: 2vw;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.card{
+    position: relative;
+    bottom: 120%;
+    right: 8%;
+    padding:42px 32px;
+    cursor: pointer;
+    clip-path: circle(8% at 85% 10%);
+    transition: all ease-in-out .3s;
+    background-color:#42779d;
+    
+    &__infoicon{
+      position:absolute;
+      
+      top:16px;
+      right:30px;
+      
+      font-size:1.4em;
+      color:#000000;
+      transition:ease-out .3s;
+    }
+    &__title{
+      margin:0;
+      
+      font-size: 2em;
+      line-height:1.8;
+    }
+    &__description{
+      margin:0;
+      
+      font-size: 1.1em;
+      line-height:1.6;
+      text-transform: none;
+    }
+    
+    &:hover, &:focus{
+      clip-path: circle(75%);
+      border-radius:20px;
+      box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
+                  0px 3px 18px rgba(0,0,0,0.08);
+      background:#ffffff;
+      
+      outline:none;
+      .card__infoicon{
+        opacity: 0;
+      }
+    }
+    &:focus{
+      box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
+                  0px 3px 18px rgba(0,0,0,0.08), 
+                  0px 0px 0px 4px rgba(0,0,0,0.2);
+    }
+  }
 
 // partnership
 
@@ -287,6 +343,7 @@ header{
     font-size: 2em;
     letter-spacing: 3px;
     margin-bottom: 5vw;
+    font-family: 'Open Sans', sans-serif;
     p{
         width: max-content;
         border-bottom: 2px  #42779d solid;
@@ -340,15 +397,15 @@ header{
     align-items: center;
     justify-content: center;
 }
-.card{
+.card2{
     width: 600px;
     height: 300px;
 }
-.card:hover .back{
+.card2:hover .back{
     transform: rotateY(0deg);
 }
 
-.card:hover .front{
+.card2:hover .front{
     transform: rotateY(180deg);
 }
 
@@ -431,6 +488,7 @@ header{
     }
     .content{
         margin: 20px 0;
+        font-family: 'Tiro Gurmukhi', serif;
 
         h3{
             font-size: 18px;
@@ -463,6 +521,10 @@ header{
             }
         }
     }
+}
+
+input{
+    margin-bottom: 3px;
 }
 
 

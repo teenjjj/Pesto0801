@@ -2,6 +2,8 @@
 html {
   scroll-behavior: smooth;
   height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -257,6 +259,7 @@ header {
   margin-top: 4px;
   font-family: 'Open Sans', sans-serif;
   color: gray;
+  text-transform: uppercase;
 }
 
 #member_title {
@@ -266,43 +269,44 @@ header {
   font-family: 'Open Sans', sans-serif;
 }
 
-.card {
-  position: relative;
-  bottom: 120%;
-  right: 8%;
-  padding: 42px 32px;
-  cursor: pointer;
-  -webkit-clip-path: circle(8% at 85% 10%);
-          clip-path: circle(8% at 85% 10%);
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
-  background-color: #42779d;
+.element {
+  display: -ms-grid;
+  display: grid;
 }
 
-.card__infoicon {
+.detailcard {
+  position: relative;
+  padding: 42px 32px;
+  -webkit-clip-path: circle(5% at 95% 11%);
+          clip-path: circle(5% at 95% 11%);
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  background-color: #ffffff;
+}
+
+.detailcard__infoicon {
   position: absolute;
-  top: 16px;
-  right: 30px;
+  top: 10px;
+  right: 28px;
   font-size: 1.4em;
   color: #000000;
   -webkit-transition: ease-out .3s;
   transition: ease-out .3s;
 }
 
-.card__title {
+.detailcard__title {
   margin: 0;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.8;
 }
 
-.card__description {
+.detailcard__description {
   margin: 0;
   font-size: 1.1em;
   line-height: 1.6;
-  text-transform: none;
 }
 
-.card:hover, .card:focus {
+.detailcard:hover, .detailcard:focus {
   -webkit-clip-path: circle(75%);
           clip-path: circle(75%);
   border-radius: 20px;
@@ -312,11 +316,11 @@ header {
   outline: none;
 }
 
-.card:hover .card__infoicon, .card:focus .card__infoicon {
+.detailcard:hover .detailcard__infoicon, .detailcard:focus .detailcard__infoicon {
   opacity: 0;
 }
 
-.card:focus {
+.detailcard:focus {
   -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
@@ -399,17 +403,17 @@ header {
           justify-content: center;
 }
 
-.card2 {
+.card {
   width: 600px;
   height: 300px;
 }
 
-.card2:hover .back {
+.card:hover .back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }
 
-.card2:hover .front {
+.card:hover .front {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -510,7 +514,6 @@ header {
 
 #contain .content {
   margin: 20px 0;
-  font-family: 'Tiro Gurmukhi', serif;
 }
 
 #contain .content h3 {
@@ -542,10 +545,6 @@ header {
 
 #contain .social_links a span:hover {
   background-color: #A0A0A0;
-}
-
-input {
-  margin-bottom: 3px;
 }
 
 a .to-top {
