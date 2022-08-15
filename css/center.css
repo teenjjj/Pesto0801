@@ -558,8 +558,24 @@ header {
   background-color: #A0A0A0;
 }
 
-input {
-  margin-bottom: 3px;
+input[type=text] {
+  margin: 5px;
+  border: 2px solid #ccc3b8;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  padding: 5px;
+  border: 2px solid #ccc3b8;
+  border-radius: 5px;
+  font-family: 'Tiro Gurmukhi', serif;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ccc3b8;
+  color: #fff;
 }
 
 a .to-top {
