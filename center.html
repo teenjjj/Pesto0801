@@ -24,6 +24,7 @@
     <script src="js/totop.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/member.js"></script>
+    <script src="js/type.js"></script>
     <link href="css/center.css" rel="stylesheet">
 
     <title>Center</title>
@@ -43,17 +44,26 @@
     <div id="popup" style="width: 100%;">
         <!-- navbar -->
         <header class="navbar">
+
+            <div class="toggle-btn" onclick="menu();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div id="main_menu">
                 <div class="logo_area">
                     <a href="#hero"><img src="pics/logo 1.png"></a>
                 </div>
                 <div class="inner_menu">
-                    <ul>
-                        <li><a href="#service1">Service</a></li>
-                        <li><a href="#member">Team member</a></li>
-                        <li><a href="#Partnership">Partnership</a></li>
-                        <li><a href="#contact_us">Contact us</a></li>
-                    </ul>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#service1">Service</a></li>
+                            <li><a href="#member">Team member</a></li>
+                            <li><a href="#Partnership">Partnership</a></li>
+                            <li><a href="#contact_us">Contact us</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -63,7 +73,7 @@
 
             <!-- hero section -->
             <section id="hero">
-                <p class="line anim-typewriter">Lorem ipsum dolor sit amet consectetur.</p>
+                <p id="type" class="line anim-typewriter" ></p>
             </section>
 
             <!-- service section -->
@@ -72,12 +82,8 @@
                     <h2 data-aos="zoom-out" data-aos-duration="1000">ESG<br>simulation</h2>
                     <div class="sec_text_desc">
                         <div class="sec_text_desc_p" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam libero temporibus
-                                explicabo nihil magni ex praesentium nesciunt, pariatur, odit quas laboriosam nobis ea
-                                excepturi est. Quas sunt porro asperiores corporis!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum quasi aspernatur
-                                exercitationem laudantium aliquid molestiae laboriosam accusantium fugit itaque, ipsa
-                                perferendis nam tenetur inventore suscipit nihil! Ex, ipsam porro?</p>
+                            <p>Pesto Green aims to make a sustainable lifestyle easier to access and adopt in Hong Kong. We serve as a platform to connect the local green service providers/merchants with sustainability practitioners, ranging from sustainability advocates to early adopters - who are new to the world of sustainable lifestyle. </p>
+                            <p>Our qualified merchant partners will provide exclusive discounts for our platform users, where in return we will drive traffic to their business and enhance their goodwill in their sustainability commitment. We aspire to cover every aspect of products and services that people need on a daily basis.</p>
                         </div>
                     </div>
                 </div>
@@ -90,19 +96,16 @@
             <div>
                 <section id="service2">
                     <div class="sec_img" data-aos="fade-up" data-aos-duration="1500">
-                        <img src="pics/intro3.jpg" alt="">
+                        <img src="pics/intro2.jpg" alt="">
                     </div>
                     <div class="sec_text">
                         <h2 data-aos="zoom-out" data-aos-duration="1000">Crapto<br>App</h2>
                         <div class="sec_text_desc">
                             <div class="sec_text_desc_p" data-aos="fade-up" data-aos-duration="1000"
                                 data-aos-delay="300">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam libero temporibus
-                                    explicabo nihil magni ex praesentium nesciunt, pariatur, odit quas laboriosam nobis
-                                    ea excepturi est. Quas sunt porro asperiores corporis!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum quasi
-                                    aspernatur exercitationem laudantium aliquid molestiae laboriosam accusantium fugit
-                                    itaque, ipsa perferendis nam tenetur inventore suscipit nihil! Ex, ipsam porro?</p>
+                                <p>Pesto Green aims to take the lead in the decentralization of the ESG commitment in which people have access and can participate directly in ESG acts in order to improve their lives and the lives of others. The Pesto Green Blockchain would be Solana-based, establishing a self-sustained ecosystem that is less energy intensive than existing Proof-of-Work (POW) blockchains.
+                                    DAO governance structure will be incorporated, powering a fully-balanced reward mechanism.
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +130,7 @@
                             <div class="element">
 
                                 <div class="simple">
-                                    <img src="pics/member.jpg" alt="" style="height:40vh;">
+                                    <img src="pics/peter.jpeg" alt="" style="height:40vh;">
                                 </div>
 
                                 <div class="action">
@@ -150,7 +153,7 @@
                             <div class="element">
 
                                 <div class="simple">
-                                    <img src="pics/member.jpg" alt="" style="height:40vh;">
+                                    <img src="pics/Jason.jpg" alt="" style="height:40vh;">
 
                                 </div>
 
@@ -174,7 +177,7 @@
                             <div class="element">
 
                                 <div class="simple">
-                                    <img src="pics/member.jpg" alt="" style="height:40vh;">
+                                    <img src="pics/lisa.JPG" alt="" style="height:40vh;">
 
                                 </div>
 
@@ -196,7 +199,7 @@
                             <div class="element">
 
                                 <div class="simple">
-                                    <img src="pics/member.jpg" alt="" style="height:40vh;">
+                                    <img src="pics/Joseph.jpg" alt="" style="height:40vh;">
 
                                 </div>
 
@@ -243,35 +246,6 @@
                                 </div>
 
                             </div>
-                            
-<!--                             <div class="element">
-                                <img src="pics/member.jpg" alt="" style="height:40vh;">
-                                <h3>Amber</h3>
-                                <p>PROJECT MANAGER</p>
-
-                                <div class="action" onclick="actionToggle();">
-                                    <span>
-                                        <i class="fa fa-info"></i>
-                                    </span>
-                                    <ul>
-                                        <li>Standard Chartered – Retail Banking Intern</li>
-                                        <li>BuyHive – Business Development Analyst (Ecommerce Startup)</li>
-                                        <li>New Heritage CFNT Foundation – Project Manager (Venture Capital)</li>
-                                        <li>Co-Founder & President of The Blockchain Scholars (Blockchain Society)</li>
-                                        <li>Quote: “I believe when life gives you lemons, you should make lemonade...and
-                                            try to find someone whose life has given them vodka, and have a party.”</li>
-                                    </ul>
-
-                                </div>
-                                <div class="card">
-                                    <span class="card__infoicon">
-                                        <i class="fa fa-info"></i>
-                                    </span>
-                                    <h1 class="card__title">Amber</h1>
-                                    <p class="card__description">Occupation: Project manager<br><br>Favourite Food:
-                                        <br>Spaghetti with Shrimps and Pesto</p>
-                                </div> 
-                            </div> -->
 
                             
 
@@ -318,7 +292,7 @@
                 <div class="partnertitle">
                     <p data-aos="zoom-out" data-aos-duration="1000">Contact Us</p>
                 </div>
-                <div class="card2">
+                <!-- <div class="card2">
                     <div class="front"><img src="pics/logo 1.png"></div>
                     <div class="back">
                         <div class="col-1">
@@ -330,9 +304,6 @@
                                 <div class="tittle">Pesto Green</div>
                                 <div class="profesion">ESG Simulation & Crapto APP</div>
                                 <div class="content">
-                                    <!-- <h3>Add: 23 Wilbur Bush Road NW, Crooksville,oh, 43331  United States</h3>
-                                    <h3>TEL: (02)1111-1111</h3>
-                                    <h3>Gmail:Pesto_Green@gmail.com</h3> -->
                                     Name: <input placeholder="Your name" type="text"><br>
                                     Subject: <input placeholder="What can we help you with?" size="30" type="text"><br>
                                     Details: <textarea placeholder="Please describe more." size="60"
@@ -350,7 +321,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </section>
 
@@ -373,6 +344,7 @@
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
         integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
@@ -385,13 +357,14 @@
         AOS.init();
     </script>
 
-    <!-- <script type="text/javascript">
-        function actionToggle(){
-            var action = document.querySelector('.action');
-            action.classList.toggle('active')
-        
+
+
+    <script type="text/javascript">
+        function menu(){
+            var navbar = document.querySelector('#nav');
+            navbar.classList.toggle('show');
         }
-    </script> -->
+    </script>
 </body>
 
 </html>
