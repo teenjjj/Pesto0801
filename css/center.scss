@@ -287,13 +287,15 @@ header{
 @media screen and (max-width: 767px) {//手機
     #service1{
         flex-direction: column;
+        padding: 20px;
+        margin-bottom: 30vh;
     }
     #service2{
         flex-direction: column;
+        padding: 20px;
     }
     .sec_img{
         img{
-            text-align: center;
             height: 250px;
             box-shadow: 0px 0px 15px 10px gray;
         }
@@ -440,6 +442,16 @@ ul li{
         transform: scale(1.2);
     }
 }
+
+@media screen and (max-width: 767px) {//手機
+    .partner{
+        .partner1,.partner2{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
 
 // contact us
 
