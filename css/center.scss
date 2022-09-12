@@ -304,6 +304,9 @@ header{
             height: 250px;
             box-shadow: 0px 0px 15px 10px gray;
         }
+        #img1{
+            height: 250px;
+        }
     }
 }
 
@@ -478,15 +481,18 @@ ul li{
 .card2:hover .front{
     transform: rotateY(180deg);
 }
+//這!!!
 
 
 .back{
     height: 300px;
     border-radius: 10px;
     backface-visibility: hidden;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg);//這!!
     transition: 0.5s ease-out;
     box-shadow:3px 3px 9px 5px rgb(63, 63, 63); 
+    display: flex;
+
 }
 
 .front{
@@ -513,7 +519,7 @@ ul li{
     height: 300px;
     background: #dad3ca;
     border-radius: 10px 0 0 10px;
-    float: left;
+    // float: left;
     text-align: center;
 
     img{
@@ -535,7 +541,7 @@ ul li{
     height: 300px;
     background: #fff;
     border-radius: 0 10px 10px 0;
-    float: right;
+    // float: right;
 }
 
 #contain{
@@ -635,7 +641,44 @@ input[type=submit]{
 @media screen and (max-width: 767px) {//手機
     #contact_us{
         flex-direction: column;
+
+        .card2{
+                width: 300px;
+                height: 600px;
+            .front{
+                width: 300px;
+                height: 600px;
+                //display: none;//這!
+            }
+            
+        }
+        .back{
+            width: 300px;
+            height: 600px;
+            flex-direction: column;
+            border-radius: 10px;
+
+            .col-1{
+                width: 300px;
+                height: 80px;
+                border-radius: 10px 10px 0 0;
+            }
+            .col-2{
+                width: 300px;
+                height: 520px;
+                border-radius: 0 0 10px 10px;
+            }
+        }
+        input[type=text] {
+            margin:10px; 
+        }
+        textarea[type=text]{
+            min-width: 245px;
+            min-height: 110px;
+            margin: 7px
+        }
     }
+    
 }
 
 
