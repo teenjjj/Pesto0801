@@ -265,12 +265,14 @@ header {
   .sec_img img {
     height: 250px;
     box-shadow: 0px 0px 15px 10px gray;
+    margin-left: 28px;
   }
   .sec_img #img1 {
-    height: 250px;
+    height: 215px;
   }
 }
 .horizontal-section {
+  width: 100%;
   padding: 100px 0;
 }
 
@@ -345,6 +347,11 @@ ul li {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .sticky-wrapper {
+    width: 50%;
+  }
+}
 .partnertitle {
   place-content: center;
   text-align: center;
@@ -553,6 +560,7 @@ input[type=submit] {
   border: 2px solid #ccc3b8;
   border-radius: 5px;
   font-family: "Tiro Gurmukhi", serif;
+  color: #000;
   background-color: #fff;
   cursor: pointer;
   transition: 0.4s;
