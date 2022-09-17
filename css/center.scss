@@ -7,11 +7,6 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
-// @media screen and (max-width: 767px) {
-//     html{
-//         overflow-x: hidden;
-//     }
-// }
 
 
 // logo animate
@@ -51,7 +46,6 @@ header{
     position:relative;
     z-index:99999;
 }
-
 
 
 .logo_area{
@@ -210,7 +204,7 @@ header{
 #hero{ 
     width: 100%;
     height: 100vh;
-    background-color: gray;
+    // background-color: gray;
     position: relative;
     word-spacing: 3px;
     text-align: center;
@@ -314,7 +308,7 @@ header{
 // team member
 
 .horizontal-section{
-    width: 100%;
+    width: 100vw;
     padding: 100px 0;
     // background-color: #c8ecc3;
 }
@@ -322,7 +316,7 @@ header{
 .sticky-wrapper {
     position: sticky;
     top: 100px;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     padding:100px;
 }
@@ -394,6 +388,9 @@ ul li{
     margin-bottom: 3%;
     letter-spacing: 2px;
 }
+.quote{
+    font-weight: 600;
+}
 
 @media screen  and (max-width: 767px){
     .sticky-wrapper {
@@ -402,7 +399,7 @@ ul li{
 }
 
 
-// partnership
+// Supporting  Organizations
 
 .partnertitle{
     place-content:center;
@@ -459,6 +456,9 @@ ul li{
 }
 
 @media screen and (max-width: 767px) {//手機
+    .partnertitle{
+        font-size: 1.3rem;
+    }
     .partner{
         .partner1,.partner2{
             flex-direction: column;
@@ -491,7 +491,7 @@ ul li{
 //這!!!
 
 
-.back{
+.back{  //背面
     height: 300px;
     border-radius: 10px;
     backface-visibility: hidden;
@@ -502,7 +502,7 @@ ul li{
 
 }
 
-.front{
+.front{ //正面
     position: absolute;
     background-color: #dad3ca;
     height: 300px;
@@ -521,7 +521,7 @@ ul li{
     }
 }
 
-.col-1{
+.col-1{ //背面左欄
     width: 160px;
     height: 300px;
     background: #dad3ca;
@@ -543,7 +543,7 @@ ul li{
     }
 }
 
-.col-2{
+.col-2{ //背面右欄
     width: 440px;
     height: 300px;
     background: #fff;
@@ -551,7 +551,7 @@ ul li{
     // float: right;
 }
 
-#contain{
+#contain{    //背面文字
     margin: 20px;
 
     .tittle{
