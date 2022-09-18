@@ -350,9 +350,18 @@ ul li {
   font-weight: 600;
 }
 
+#last_ele {
+  border: none;
+  width: 10vw;
+}
+
 @media screen and (max-width: 767px) {
   .sticky-wrapper {
     width: 50%;
+  }
+  #last_ele {
+    border: none;
+    width: 30vw;
   }
 }
 .partnertitle {
