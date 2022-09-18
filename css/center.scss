@@ -121,43 +121,8 @@ header{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 980px){//手機以上 電腦以下
-    .toggle-btn{
-        display: block;
-    }
 
-    nav{
-        display: none;
-        width: 100%;
-    }
-
-    nav ul li{
-        padding: 15px 0px;
-        width: 100%;
-    }
-    nav.show{
-        display: block;
-    }
-
-    .logo_area{
-        height: 300px;
-        position: absolute;
-        left: 40%;
-        top: 0;
-        content: "";
-        margin-left: -150px;
-        margin-top: 10px;
-        z-index: 99999;
-        
-        img{
-            height: 80px;
-
-        }
-    }
-}
-
-
-@media screen and (max-width: 767px) {//手機
+@media screen and (max-width: 720px) {//手機
     .toggle-btn{
         display: block;
     }
@@ -187,6 +152,45 @@ header{
         z-index: 99999;
         
         img{
+            height: 80px;
+
+        }
+    }
+}
+
+@media screen and (min-width:721px)and (max-width: 1023px){//平板
+    .toggle-btn{
+        display: block;
+        right: 22vw;
+    }
+
+    nav{
+        display: none;
+        width: 100%;
+    }
+
+    nav ul li{
+        padding: 15px 0px;
+        width: 100%;
+    }
+    nav.show{
+        display: block;
+    }
+
+    .logo_area{
+        height: 300px;
+        position: absolute;
+        left: 40%;
+        top: 0;
+        content: "";
+        margin-left: -150px;
+        margin-top: 10px;
+        z-index: 99999;
+        
+        img{
+                height: 80px;
+                position: relative;
+                right: 13vw;
             height: 80px;
 
         }
@@ -283,7 +287,7 @@ header{
     padding: 100px;
 }
 
-@media screen and (max-width: 767px) {//手機
+@media screen and (max-width: 720px) {//手機
     #service1{
         flex-direction: column;
         padding: 20px;
@@ -295,12 +299,37 @@ header{
     }
     .sec_img{
         img{
-            height: 250px;
+            height: 14rem;
             box-shadow: 0px 0px 15px 10px gray;
             margin-left: 28px;
         }
         #img1{
-            height: 215px;
+            height: 12rem;
+        }
+    }
+}
+
+@media screen and (min-width:721px)and (max-width: 1023px){//平板
+    #service1{
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 25vh;
+    }
+    #service2{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .sec_text {
+        max-width: 98vw;
+    }
+    .sec_img{
+        img{
+            height: 20rem;
+            box-shadow: 0px 0px 15px 10px gray;
+            margin-left: 3rem;
+        }
+        #img1{
+            height: 20rem;
         }
     }
 }
@@ -327,7 +356,7 @@ header{
 }
   
 .element {
-    height: 490px;
+    height: 500px;
     width: 650px;
     margin: 0 30px 0 10px;
     flex-shrink: 0;
@@ -342,6 +371,7 @@ header{
     margin-left: 2%;
     
     img{
+        height:19rem;
         transition: .3s;
         border-radius: 20px;
         box-shadow: 10px 10px 10px gray;
@@ -394,19 +424,31 @@ ul li{
 
 #last_ele{
     border: none;
-    width: 10vw;
+    width: 20vw;
 }
 
-@media screen  and (max-width: 767px){
-    .sticky-wrapper {
-        width: 50%;
-    }
+@media screen and (max-width: 720px){
+    
     #last_ele{
         border: none;
         width: 30vw;
     }
+    .simple img {
+        height: 21rem;
+    }
 }
-
+@media screen and (min-width:721px)and (max-width: 1023px){//平板
+    #last_ele{
+        border: none;
+        width: 25vw;
+    }
+    .simple img {
+        height: 23rem;
+    }
+    .sticky-wrapper {
+        width: 73%;
+    }
+}
 
 // Supporting  Organizations
 
@@ -464,7 +506,7 @@ ul li{
     }
 }
 
-@media screen and (max-width: 767px) {//手機
+@media screen and (max-width: 720px) {//手機
     .partnertitle{
         font-size: 1.3rem;
     }
@@ -655,7 +697,7 @@ input[type=submit]{
     }
 }
 
-@media screen and (max-width: 767px) {//手機
+@media screen and (max-width: 720px){//手機
     #contact_us{
         flex-direction: column;
 
@@ -698,6 +740,66 @@ input[type=submit]{
     
 }
 
+@media screen and (min-width:721px)and (max-width: 1023px){//平板
+    // .card2{
+    //     width: 500px;
+    //     height: 250px;
+    //     .front{
+    //         width: 500px;
+    //         height: 250px;
+    //     }
+    // }
+    // .back{
+    //     width: 500px;
+    //     height: 250px;
+    //     .col-1{
+    //         width: 133px;
+    //         height: 250px;
+    //     }
+    //     .col-2{
+    //         width: 367px;
+    //         height: 250px;
+    //     }
+    // }
+
+    .card2{
+        width: 300px;
+        height: 600px;
+    .front{
+        width: 300px;
+        height: 600px;
+        //display: none;//這!
+    }
+    
+}
+.back{
+    width: 300px;
+    height: 600px;
+    flex-direction: column;
+    border-radius: 10px;
+
+    .col-1{
+        width: 300px;
+        height: 80px;
+        border-radius: 10px 10px 0 0;
+    }
+    .col-2{
+        width: 300px;
+        height: 520px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+input[type=text] {
+    margin:10px; 
+}
+textarea[type=text]{
+    min-width: 245px;
+    min-height: 110px;
+    margin: 7px
+}
+
+}
+
 
 // to top button
 a .to-top{
@@ -738,6 +840,12 @@ a .to-top{
     cursor: pointer;
 }
 
+@media screen and (min-width:721px) and (max-width: 1023px){
+    .to-top{
+        right: 10vw;
+    }
+    
+}
 
 // footer
 footer{

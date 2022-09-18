@@ -110,36 +110,7 @@ header {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 980px) {
-  .toggle-btn {
-    display: block;
-  }
-  nav {
-    display: none;
-    width: 100%;
-  }
-  nav ul li {
-    padding: 15px 0px;
-    width: 100%;
-  }
-  nav.show {
-    display: block;
-  }
-  .logo_area {
-    height: 300px;
-    position: absolute;
-    left: 40%;
-    top: 0;
-    content: "";
-    margin-left: -150px;
-    margin-top: 10px;
-    z-index: 99999;
-  }
-  .logo_area img {
-    height: 80px;
-  }
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   .toggle-btn {
     display: block;
   }
@@ -168,6 +139,39 @@ header {
     z-index: 99999;
   }
   .logo_area img {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+  .toggle-btn {
+    display: block;
+    right: 22vw;
+  }
+  nav {
+    display: none;
+    width: 100%;
+  }
+  nav ul li {
+    padding: 15px 0px;
+    width: 100%;
+  }
+  nav.show {
+    display: block;
+  }
+  .logo_area {
+    height: 300px;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    content: "";
+    margin-left: -150px;
+    margin-top: 10px;
+    z-index: 99999;
+  }
+  .logo_area img {
+    height: 80px;
+    position: relative;
+    right: 13vw;
     height: 80px;
   }
 }
@@ -251,7 +255,7 @@ header {
   padding: 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   #service1 {
     flex-direction: column;
     padding: 20px;
@@ -262,12 +266,34 @@ header {
     padding: 20px;
   }
   .sec_img img {
-    height: 250px;
+    height: 14rem;
     box-shadow: 0px 0px 15px 10px gray;
     margin-left: 28px;
   }
   .sec_img #img1 {
-    height: 215px;
+    height: 12rem;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+  #service1 {
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 25vh;
+  }
+  #service2 {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .sec_text {
+    max-width: 98vw;
+  }
+  .sec_img img {
+    height: 20rem;
+    box-shadow: 0px 0px 15px 10px gray;
+    margin-left: 3rem;
+  }
+  .sec_img #img1 {
+    height: 20rem;
   }
 }
 .horizontal-section {
@@ -290,7 +316,7 @@ header {
 }
 
 .element {
-  height: 490px;
+  height: 500px;
   width: 650px;
   margin: 0 30px 0 10px;
   flex-shrink: 0;
@@ -306,6 +332,7 @@ header {
   margin-left: 2%;
 }
 .simple img {
+  height: 19rem;
   transition: 0.3s;
   border-radius: 20px;
   box-shadow: 10px 10px 10px gray;
@@ -352,16 +379,28 @@ ul li {
 
 #last_ele {
   border: none;
-  width: 10vw;
+  width: 20vw;
 }
 
-@media screen and (max-width: 767px) {
-  .sticky-wrapper {
-    width: 50%;
-  }
+@media screen and (max-width: 720px) {
   #last_ele {
     border: none;
     width: 30vw;
+  }
+  .simple img {
+    height: 21rem;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+  #last_ele {
+    border: none;
+    width: 25vw;
+  }
+  .simple img {
+    height: 23rem;
+  }
+  .sticky-wrapper {
+    width: 73%;
   }
 }
 .partnertitle {
@@ -411,7 +450,7 @@ ul li {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   .partnertitle {
     font-size: 1.3rem;
   }
@@ -585,7 +624,7 @@ input[type=submit]:hover {
   color: #fff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   #contact_us {
     flex-direction: column;
   }
@@ -617,6 +656,40 @@ input[type=submit]:hover {
     margin: 10px;
   }
   #contact_us textarea[type=text] {
+    min-width: 245px;
+    min-height: 110px;
+    margin: 7px;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+  .card2 {
+    width: 300px;
+    height: 600px;
+  }
+  .card2 .front {
+    width: 300px;
+    height: 600px;
+  }
+  .back {
+    width: 300px;
+    height: 600px;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .back .col-1 {
+    width: 300px;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+  }
+  .back .col-2 {
+    width: 300px;
+    height: 520px;
+    border-radius: 0 0 10px 10px;
+  }
+  input[type=text] {
+    margin: 10px;
+  }
+  textarea[type=text] {
     min-width: 245px;
     min-height: 110px;
     margin: 7px;
@@ -660,6 +733,11 @@ a .to-top {
   cursor: pointer;
 }
 
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+  .to-top {
+    right: 10vw;
+  }
+}
 footer {
   position: relative;
   bottom: 10%;
