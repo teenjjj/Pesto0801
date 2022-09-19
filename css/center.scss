@@ -29,6 +29,14 @@ body{
     }
 }
 
+@media screen and (min-width: 3440px) { //iMac
+    #logo{
+        img {
+            height:20rem;
+        }
+    }
+}
+
 
 // navbar
 header{
@@ -114,7 +122,7 @@ header{
     span{
         display: inline-block;
         width: 100%;
-        float: left;
+        float: left; //這邊的warning不用理會
         height: 2px;
         background-color: #000;
         margin-bottom: 8px;
@@ -161,7 +169,7 @@ header{
 @media screen and (min-width:721px)and (max-width: 1023px){//平板
     .toggle-btn{
         display: block;
-        right: 22vw;
+        right: 20vw;
     }
 
     nav{
@@ -191,9 +199,30 @@ header{
                 height: 80px;
                 position: relative;
                 right: 13vw;
-            height: 80px;
+                height: 80px;
 
         }
+    }
+}
+
+@media screen and (min-width: 3440px) { //iMac
+    .inner_menu li a {
+        font-size: 2.6rem;
+    }
+    .logo_area{
+        height: 600px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        content: "";
+        margin-left: -300px;
+    
+        img{
+            height: 16rem;
+        }
+    }
+    li{
+        display: inline-block;
     }
 }
 
@@ -234,8 +263,14 @@ header{
     to{
         border-right-color: transparent;
     }
-}
+} //控制打字的黑線
 
+
+@media screen and (min-width: 3440px) { //iMac
+    #hero .line{
+        font-size: 4rem;
+    }
+}
 
 // service introduce
 
@@ -261,7 +296,7 @@ header{
 
     .sec_text_desc_p{
         margin: 55px 0 40px;
-
+        font-family: 'Open Sans', sans-serif;
         p{
             margin-bottom: 15px;
             line-height: 28px;
@@ -279,6 +314,7 @@ header{
 .sec_img #img1{
     height: 360px;
     margin-left: 35px;
+    margin-top: 65px;
 }
 
 #service2{
@@ -300,7 +336,6 @@ header{
     .sec_img{
         img{
             height: 14rem;
-            box-shadow: 0px 0px 15px 10px gray;
             margin-left: 28px;
         }
         #img1{
@@ -325,12 +360,41 @@ header{
     .sec_img{
         img{
             height: 20rem;
-            box-shadow: 0px 0px 15px 10px gray;
             margin-left: 3rem;
         }
         #img1{
             height: 20rem;
         }
+    }
+}
+
+@media screen and (min-width: 3440px) { //iMac
+    .sec_text {
+        max-width: 30%;
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    .sec_text .sec_text_desc_p p {
+        margin-bottom: 15px;
+        line-height: 45px;
+        letter-spacing: 3px;
+    }
+
+    .sec_img{
+        img{
+            height: 41rem;
+        }
+        #img1{
+            height: 43rem;
+        }
+    }
+
+    #service1 , #service2{
+        justify-content: space-around;
     }
 }
 
@@ -428,10 +492,12 @@ ul li{
 }
 
 @media screen and (max-width: 720px){
-    
+    .sticky-wrapper {
+        width: 50%;
+    }
     #last_ele{
         border: none;
-        width: 30vw;
+        width: 40vw;
     }
     .simple img {
         height: 21rem;
@@ -440,7 +506,7 @@ ul li{
 @media screen and (min-width:721px)and (max-width: 1023px){//平板
     #last_ele{
         border: none;
-        width: 25vw;
+        width: 20vw;
     }
     .simple img {
         height: 23rem;
@@ -448,7 +514,42 @@ ul li{
     .sticky-wrapper {
         width: 73%;
     }
+    .element {
+        height: 520px;
+    }
 }
+
+@media screen and (min-width: 3440px) { //iMac
+    .sticky-wrapper {
+        width: 90%;
+    }
+    .element {
+    height: 40rem;
+    width: 71rem;
+    margin: 0 100px 0 50px;
+    }
+    ul li{
+        font-size: 1.5em;
+    }
+    .simple img {
+        height: 24rem;
+    }
+    #member {
+        h3{
+        font-size: 2.7em;
+        }
+        p{
+            font-size: 2.5em;
+        }
+    }
+    .action {
+        height: 39rem;
+    }
+    
+}
+
+
+
 
 // Supporting  Organizations
 
@@ -518,6 +619,22 @@ ul li{
     }
 }
 
+@media screen and (min-width: 3440px) { //iMac
+    .partnertitle{
+        font-size: 3rem;
+    }
+    .item h4 {
+        font-size: 2.8rem;
+    }
+    .item img {
+        height: 26rem;
+    }
+    #last_ele {
+        width: 5vw;
+    }
+}
+
+
 
 // contact us
 
@@ -532,13 +649,13 @@ ul li{
     width: 600px;
     height: 300px;
 }
-.card2:hover .back{
-    transform: rotateY(0deg);
-}
+// .card2:hover .back{
+//     transform: rotateY(0deg);
+// }
 
-.card2:hover .front{
-    transform: rotateY(180deg);
-}
+// .card2:hover .front{
+//     transform: rotateY(180deg);
+// }
 //這!!!
 
 
@@ -546,7 +663,7 @@ ul li{
     height: 300px;
     border-radius: 10px;
     backface-visibility: hidden;
-    transform: rotateY(180deg);//這!!
+    // transform: rotateY(180deg);//這!!
     transition: 0.5s ease-out;
     box-shadow:3px 3px 9px 5px rgb(63, 63, 63); 
     display: flex;
@@ -567,6 +684,7 @@ ul li{
     transition: 0.5s ease-out;
     box-shadow:3px 3px 9px 5px rgb(63, 63, 63); 
     z-index: 2;
+    display: none;//這!
     img{
         height: 100px;
     }
@@ -741,26 +859,6 @@ input[type=submit]{
 }
 
 @media screen and (min-width:721px)and (max-width: 1023px){//平板
-    // .card2{
-    //     width: 500px;
-    //     height: 250px;
-    //     .front{
-    //         width: 500px;
-    //         height: 250px;
-    //     }
-    // }
-    // .back{
-    //     width: 500px;
-    //     height: 250px;
-    //     .col-1{
-    //         width: 133px;
-    //         height: 250px;
-    //     }
-    //     .col-2{
-    //         width: 367px;
-    //         height: 250px;
-    //     }
-    // }
 
     .card2{
         width: 300px;
@@ -768,7 +866,6 @@ input[type=submit]{
     .front{
         width: 300px;
         height: 600px;
-        //display: none;//這!
     }
     
 }
@@ -800,6 +897,64 @@ textarea[type=text]{
 
 }
 
+@media screen and (min-width: 3440px) { //iMac
+    .partnertitle{
+        font-size: 4rem;
+    }
+    .card2{
+        width: 900px;
+        height: 450px;
+    .front{
+        width: 900px;
+        height: 450px;
+    }
+    
+    }
+    .back{
+        width: 900px;
+        height: 450px;
+        .col-1{
+            width: 225px;
+            height: 450px;
+        }
+        .col-2{
+            width: 80%;
+            height: 450px;
+        }
+    }
+    input[type=text] {
+        margin:10px; 
+    }
+    textarea[type=text]{
+        min-width: 400px;
+        min-height: 110px;
+        margin: 7px
+    }
+
+    .col-1 {
+        span {
+            font-size: 44px;
+            margin-top: 210px;
+        }
+        img {
+            width: 203px;
+            margin-top: 31px;
+        }
+    }
+
+    #contain .tittle {
+        font-size: 2.5rem;
+    }
+    #contain .profesion {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    #contain .social_links a span {
+        font-size: 29px;
+        margin: 21px;
+    }
+
+}
 
 // to top button
 a .to-top{
@@ -847,14 +1002,25 @@ a .to-top{
     
 }
 
+@media screen and (min-width: 3440px) { //iMac
+    .to-top{
+        height: 8rem;
+        width: 8rem;
+            p {
+            font-size: 20px;
+            }
+            span {
+                font-size: 55px;
+            }
+    }
+     
+}
+
 // footer
 footer{
     position: relative;
-    // height:100px;
     bottom: 10%;
-    // margin-top: 80px;
-    // margin-bottom: 30px;
-    // bottom: -650px;
+
 }
 footer p{
     width:100%;
