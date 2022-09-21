@@ -204,7 +204,7 @@ header {
   height: 100vh;
   background-image: url("../pics/pesto.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
@@ -576,11 +576,20 @@ ul li {
   height: 300px;
 }
 
+.card2:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card2:hover .front {
+  transform: rotateY(180deg);
+}
+
 .back {
   height: 300px;
   border-radius: 10px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  transform: rotateY(180deg);
   transition: 0.5s ease-out;
   box-shadow: 3px 3px 9px 5px rgb(63, 63, 63);
   display: flex;
@@ -601,7 +610,6 @@ ul li {
   transition: 0.5s ease-out;
   box-shadow: 3px 3px 9px 5px rgb(63, 63, 63);
   z-index: 2;
-  display: none;
 }
 .front img {
   height: 100px;
